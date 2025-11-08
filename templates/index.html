@@ -31,11 +31,8 @@
           <li class="nav-item"><a class="nav-link" href="/add">Add Student</a></li>
           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-<<<<<<< HEAD
-=======
           <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
 
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
         </ul>
       </div>
     </div>
@@ -71,27 +68,18 @@
             <td>{{ student.student_class }}</td>
             <td>{{ student.email }}</td>
             <td>
-<<<<<<< HEAD
-              <a href ="/update/{{student.id}}" class="btn btn-sm btn-outline-primary me-2">
-                <i class="bi bi-pencil"></i>Edit
-              </a>
-=======
               <a href="/update/{{ student.id }}" 
               class="btn btn-sm btn-outline-primary me-2">
                 <i class="bi bi-pencil"></i> Edit
               </a>
               
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
               <form action="/delete/{{ student.id }}" method="POST" style="display:inline;">
                 <button class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete {{ student.name }}?')">
                   <i class="bi bi-trash"></i> Delete
                 </button>
               </form>
             </td>
-<<<<<<< HEAD
-=======
 
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
           </tr>
           {% endfor %}
         </tbody>
