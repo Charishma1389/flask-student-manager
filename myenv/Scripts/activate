@@ -41,20 +41,12 @@ case "$(uname)" in
     CYGWIN*|MSYS*|MINGW*)
         # transform D:\path\to\venv to /d/path/to/venv on MSYS and MINGW
         # and to /cygdrive/d/path/to/venv on Cygwin
-<<<<<<< HEAD
-        VIRTUAL_ENV=$(cygpath 'C:\Users\sss\Desktop\Student Management 231FJ01019\myenv')
-=======
-        VIRTUAL_ENV=$(cygpath 'C:\Users\Akram Alimaad\Desktop\Student-Managemnet\myenv')
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
+        VIRTUAL_ENV=$(cygpath 'C:\Users\sss\Downloads\flask-student-manager-main (1)\flask-student-manager-main\myenv')
         export VIRTUAL_ENV
         ;;
     *)
         # use the path as-is
-<<<<<<< HEAD
-        export VIRTUAL_ENV='C:\Users\sss\Desktop\Student Management 231FJ01019\myenv'
-=======
-        export VIRTUAL_ENV='C:\Users\Akram Alimaad\Desktop\Student-Managemnet\myenv'
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
+        export VIRTUAL_ENV='C:\Users\sss\Downloads\flask-student-manager-main (1)\flask-student-manager-main\myenv'
         ;;
 esac
 

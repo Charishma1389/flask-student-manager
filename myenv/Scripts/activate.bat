@@ -8,11 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-<<<<<<< HEAD
-set "VIRTUAL_ENV=C:\Users\sss\Desktop\Student Management 231FJ01019\myenv"
-=======
-set "VIRTUAL_ENV=C:\Users\Akram Alimaad\Desktop\Student-Managemnet\myenv"
->>>>>>> c6bcea1 (Initial commit - Flask Student Manager setup)
+set "VIRTUAL_ENV=C:\Users\sss\Downloads\flask-student-manager-main (1)\flask-student-manager-main\myenv"
 
 if not defined PROMPT set PROMPT=$P$G
 
