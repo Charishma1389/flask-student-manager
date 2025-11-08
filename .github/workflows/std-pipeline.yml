@@ -21,4 +21,28 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    
+    # Dummy Step 1: Run code formatting check
+    - name: Check code formatting with Black
+      run: |
+        pip install black
+        black --check .
+
+    # Dummy Step 2: Run unit tests
+    - name: Run unit tests
+      run: |
+        echo "Running dummy tests..."
+        pytest || echo "No tests found"
+
+    # Dummy Step 3: Lint the code
+    - name: Lint code with flake8
+      run: |
+        pip install flake8
+        flake8 . || echo "Lint warnings found"
+
+    # Dummy Step 4: Build and simulate deployment
+    - name: Build and simulate deployment
+      run: |
+        echo "Building project..."
+        echo "Simulating deployment to test server..."
+        sleep 3
+        echo "Deployment simulation complete ✅"
